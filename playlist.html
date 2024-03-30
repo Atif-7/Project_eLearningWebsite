@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Watch Course - AR Codings</title>
+</head>
+<body>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+         <div class="logo">
+            <a class="navbar-brand fs-2" href="index.html" id="logo">AR Codings <i class="fa fa-code" aria-hidden="true"></i></a>
+         </div>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center">
+               <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link active" href="lms.html">LMS</a>
+               </li>
+               <li class="nav-item">
+                  <a class="btn btn-danger" href="index.html">Logout</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+
+   <!-- course video -->
+   <section class="watch-video">
+      <div class="video-container text-center">
+         <div class="video">
+            <video src="" controls poster="img/courses/post-1-1.png" id="video"></video>
+         </div>
+         <h3 class="title">HTML <i class="fa fa-html5" aria-hidden="true"></i> tutorial (part 01)</h3>
+         <div class="info">
+            <p class="date"><i class="fas fa-calendar"></i><span>12-03-2024</span></p>
+            <p class="date"><i class="fas fa-heart"></i><span>46 likes</span></p>
+         </div>
+         <div class="tutor">
+            <img src="img/pic-4.JPG" alt="">
+            <div>
+               <h3>Atif ur Rehman</h3>
+               <span>web developer</span>
+            </div>
+         </div>
+
+         <form action="" method="post" class="flex">
+            <a href="playlist.html" class="inline-btn">view playlist</a>
+            <button><i class="fa fa-heart"></i><span>like</span></button>
+         </form>
+         <p class="description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque labore ratione, hic exercitationem mollitia obcaecati culpa dolor placeat provident porro.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid iure autem non fugit sint. A, sequi rerum architecto dolor fugiat illo, iure velit nihil laboriosam cupiditate voluptatum facere cumque nemo!
+         </p>
+      </div> 
+   </section>
+
+   <!-- comments section -->
+   <section class="comments">
+      <h1 class="heading">5 comments <i class="fa fa-comments" aria-hidden="true"></i></h1>
+      <form action="" class="add-comment">
+         <h3 class="heading2">Add comments <i class="fa fa-comment-o" aria-hidden="true"></i></h3>
+         <textarea name="comment_box" placeholder="enter your comment" required maxlength="1000" cols="30" rows="10"></textarea>
+         <input type="submit" value="add comment" class="inline-btn" name="add_comment">
+      </form>
+ 
+      <h1 class="heading">Users comments</h1>
+      <div class="box-container">
+         <div class="box">
+            <div class="user">
+               <img src="img/placeholder.png" alt="">
+               <div>
+                  <h3>Demo User</h3>
+                  <span>21-03-2024</span>
+               </div>
+            </div>
+            <div class="comment-box">this is a comment form Demo User</div>
+            <form action="" class="flex-btn">
+               <input type="submit" value="Edit comment" name="edit_comment" class="btn btn-secondary">
+               <input type="submit" value="Delete comment" name="delete_comment" class="btn btn-danger">
+            </form>
+         </div>
+ 
+         <div class="box">
+            <div class="user">
+               <img src="img/pic-1.png" alt="">
+               <div>
+                  <h3>student</h3>
+                  <span>18-03-2024</span>
+               </div>
+            </div>
+            <div class="comment-box">awesome tutorial!
+               keep going!</div>
+         </div>
+   
+         <div class="box">
+            <div class="user">
+               <img src="img/pic-5.jpg" alt="">
+               <div>
+                  <h3>student1</h3>
+                  <span>12-03-2024</span>
+               </div>
+            </div>
+            <div class="comment-box">amazing way of teaching!
+               thank you so much!
+            </div>
+         </div>
+   
+         <div class="box">
+            <div class="user">
+               <img src="img/pic-3.png" alt="">
+               <div>
+                  <h3>student2</h3>
+                  <span>08-03-2024</span>
+               </div>
+            </div>
+            <div class="comment-box">loved it, thanks for the tutorial!</div>
+         </div>
+   
+         <div class="box">
+            <div class="user">
+               <img src="img/pic-5.jpg" alt="">
+               <div>
+                  <h3>student3</h3>
+                  <span>07-03-2024</span>
+               </div>
+            </div>
+            <div class="comment-box">this is what I have been looking for! thank you so much!</div>
+         </div>
+ 
+         <div class="box">
+            <div class="user">
+               <img src="img/pic-2.jpg" alt="">
+               <div>
+                  <h3>student4</h3>
+                  <span>05-03-2024</span>
+               </div>
+            </div>
+            <div class="comment-box">thanks for the tutorial!
+            how to download source code file?
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- footer -->
+   <footer class="row text-center mt-4">
+      <p class="col-md-3 col-sm-12"><i class="fa fa-google" aria-hidden="true"></i> Ratif3610@gmail.com</p>
+      <p class="col-md-7 col-sm-12"> &COPY; Copyright @ 2024 - Created by <span class="text-primary"> Atif ur Rehman </span>-  All rights reserved</p>
+      <p class="col-md-2 col-sm-12"> <i class="fa fa-github fs-5" aria-hidden="true"></i> Atif-7</p>
+   </footer>
+    
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="jquery.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>

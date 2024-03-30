@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>E-Learning - AR Codings</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <div class="logo">
+          <a class="navbar-brand fs-2" href="index.html" id="logo">AR Codings <i class="fa fa-code" aria-hidden="true"></i></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#future">Future of E-Learning</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link bg-success" href="#login" id="lms">LMS</a>
+            </li>  
+            <li class="nav-item">
+              <a class="nav-link bg-dark" href="#" id="admin">Admin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Dashboard form -->
+    <div class="container text-center" id="adminform">
+      <form action="" class="col-md-5">
+        <legend class="my-4 text-center heading2">
+          Go to Admin Dashboard <i class="fa fa-dashboard" aria-hidden="true"></i>
+        </legend>
+        <div id="errorMsg1">
+        </div>
+        <div class="mt-4">
+          <input type="text" name="user" id="user" class="form-control" placeholder="Username" value="atif">
+        </div>
+        <div>  
+          <input type="password" id="pass" class="form-control" placeholder="Password" value="root">
+        </div>
+        <button type="submit" id="enter" class="btn btn-dark">
+          Enter
+        </button>
+      </form>
+    </div>
+
+    <section id="home">
+        <p class="my-5 fs-5">Online Learning Portal</p>
+        <h3>A better learning future starts here. </h3>
+        <button class="btn btn-primary my-5 mx-auto p-1 fs-4" id="getStBtn">Get Started</button>
+       
+    </section>
+
+    <!-- Signup & Login -->
+    <section id="getStart" class="container mb-5">
+      <!-- signup form -->
+      <form method="post" id="signup">
+        <legend class="my-4 text-center heading2">
+          Sign up <i class="fa fa-sign-in" aria-hidden="true"></i>
+        </legend>
+        <div id="errorMsg">
+        </div>
+        <div class="group1">
+          <div class="me-3">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" class="form-control" ariadescribedby="emailHelp" placeholder="Your First Name">
+          </div>
+          <div class="me-3">  
+            <label for="Last Name">Last Name</label>
+            <input type="text" name="lname" id="lname" class="form-control" placeholder="Your Last Name">
+          </div>
+          <div>  
+            <label for="city">City/State</label>
+            <input type="text" id="city" name="city" class="form-control" placeholder="City or State Name">
+          </div>
+        </div>
+        <div class="group1">
+          <div class="me-3">
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" class="form-control" ariadescribedby="emailHelp" placeholder="Provide email">
+          </div>
+          <div>  
+            <label for="Password">Password</label>
+            <input type="password" name="Password" id="password" class="form-control" placeholder="Password">
+          </div>
+          <div class="m-3">
+            <label class="form-check-label" for="">Stay logged in</label><br>
+            <input type="checkbox" class="form-check-input mb-3" value="1" name="check">
+          </div>
+        </div>
+        <span><label>Upload document here</label>
+        <input type="file" name="" class="mb-3">
+        </span>
+        <div class="bottomgrp">
+          <button type="submit" name="submit" id="submit" class="btn btn-dark me-4">Sign up</button>
+          <small>Already have an account?</small>
+          <a href="#login" class="showhideform fs-5 mx-3"> Login </a>
+        </div>
+      </form>
+      <!-- Login form-->
+      <form id="login" class="mt-5">
+        <legend class="my-5 text-center heading2">
+          Log in <span class="text-success">to access LMS</span> <i class="fa fa-sign-in" aria-hidden="true"></i>
+        </legend>
+        <div id="errorMsg2">
+        </div>
+        <div class="group1">
+          <div class="me-3">
+            <label for="email2">Email address</label>
+            <input type="email" name="email2" id="email2" class="form-control" ariadescribedby="emailHelp" placeholder="Provide email">
+          </div>
+          <div>  
+            <label for="Password2">Password</label>
+            <input type="password" name="Password2" id="password2" class="form-control" placeholder="Password">
+          </div>
+          <div class="m-3">
+            <label class="form-check-label" for="">Stay logged in</label><br>
+            <input type="checkbox" class="form-check-input mb-3" value="1" id="check" name="check">
+          </div>
+        </div>
+        <div class="bottomgrp">
+          <button type="submit" name="submit2" class="btn btn-dark me-4">Log in</button>
+          <small>yet not signup?</small>
+          <a href="#signup" class="showhideform fs-5 mx-3"> Signup Now</a>
+        </div>
+      </form>  
+      <div class="img">
+        <img src="img/home.svg">
+      </div>
+      <hr>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+      <div class="container mt-5">
+        <div class="row">
+          <h1 class="heading2 text-center my-4">About Us</h1>
+          <div class="col-md-8 m-auto my-2">
+            <h3>Best online platform for E-learning.</h3>
+            <p class="my-1">Myself Atif.
+              I'm a fullstack web developer & this website is a project E-Learning wesite Task-4 for SYNC INTERN'S internship. hope you like this project.</p>
+            <a href="#" class="btn btn-secondary fs-5 my-2">Read more</a>
+          </div>
+          <div class="image">
+           <img src="img/about-img.svg" alt="about-img">
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <!-- future of e-learning -->
+    <section id="future">
+      <div class="container">
+        <h1 class="text-center mt-5">What is the future of e-learning?</h1><br><br>
+        <p>E-learning is here to stay. As computer ownership grows across the globe e-learning becomes increasingly
+        viable and accessible. <br><br> Internet connection speeds are increasing, and with that,<br><br>
+        opportunities for more
+        multimedia training methods arise.
+        With the immense improvement of mobile networks in the past few years and the increase in telecommuting,
+        <br><br>
+        taking all the awesome features of e-learning on the road is a reality with smartphones and other
+        portable devices. Technologies such as social media are also transforming education constantly.</p>
+        <br>
+        <div class="flexp">
+          <img src="img/blog3.svg" alt="" width="50%">
+          Generally speaking, learning is expensive, takes a long time and the results can vary. <br> E-learning has
+          been trying for years now to complement the way we learn to make it more effective and measurable. The
+          result now is that there are a number of tools that help create interactive training courses,<br>
+          standardize the learning process and/or inject informal elements to otherwise formal learning processes.
+         <br><br>
+          Micro-learning focuses on the design of micro-learning activities through micro-steps in digital media
+          environments, which already is a daily reality for today’s knowledge workers. These activities can be
+          incorporated into a learner’s daily routines. Unlike “traditional” e-learning approaches, <br><br>
+          Micro-learning is an important paradigm shift that
+          avoids the need to have separate learning sessions since the learning process is embedded in the daily
+          routine of the end-user. It is also perfectly suited for mobile devices where long courses can be
+          overkill.
+        </div>
+        <p>
+          Gamification is the use of game thinking and game mechanics in a non-game context to engage users and
+          solve <br>
+          Personalized Learning is the tailoring of pedagogy, curriculum and learning environments to meet the
+          needs and aspirations of individual learners. Personalization is broader than just individualization or
+          differentiation in that it affords the learner a degree of choice about what is learned, when it is
+          learned and how it is learned. This may not indicate unlimited choice since learners will still have
+          targets to be met. <br><br> However, it may provide learners the opportunity to learn in ways that suit their
+          individual learning styles and multiple intelligences. <br><br>
+          The distant future of eLearning: Automatic learning
+          In a well-known scene from the movie The Matrix, Neo lies down in a high-tech dentist’s chair and straps
+          on a wild array of electrodes, downloading a series of martial arts training programs into his brain. <br><br>
+        </p>
+      </div>
+    </section>
+    <hr>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h1 class="text-center my-5">Contact Us</h1>
+
+      <div class="row">
+        <form action="">
+          <div class="inputBox"> 
+            <input type="text" placeholder="name" name="">
+            <input type="email" placeholder="email" name="">
+          </div>
+          <div class="inputBox">
+            <input type="number" placeholder="phone" name="">
+            <input type="text" placeholder="subject" name="">
+          </div>
+          <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
+          <input type="submit" value="Send Message" class="btn btn-success fs-4">
+        </form>
+      
+        <img src="img/contact-img.svg">
+
+        <h3 class="heading2 mb-4 text-center">Get in touch</h3>
+        <div class="contact-info-container">
+          <div class="box">
+            <i class="fa fa-phone"></i>
+            <div class="info">
+              <h3>Phone :</h3>
+              <p>+92319...</p>
+            </div>
+          </div>
+          <div class="box">
+              <i class="fa fa-envelope"></i>
+            <div class="info">
+                <h3>Email :</h3>
+                <p>ratif3610@gmail.com</p>
+            </div>
+          </div>
+          <div class="box">
+            <i class="fa fa-map"></i>
+            <div class="info">
+              <h3>Address :</h3>
+              <p>Karachi, Pakistan</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="share text-center mb-2">
+          <a href="https://www.facebook.com/profile.php?id=100045016321208" class="fa fa-facebook"></a>
+          <a href="https://github.com/Atif-7" class="fa fa-github"></a>
+          <a href="https://www.linkedin.com/in/atif-ur-rehman-9672b12b7/" class="fa fa-linkedin"></a>
+        </div>
+      </div>
+    </section>
+    <hr>
+  
+    <!-- footer -->
+    <footer class="row text-center mt-4">
+      <p class="col-md-3 col-sm-12"><i class="fa fa-google" aria-hidden="true"></i> Ratif3610@gmail.com</p>
+      <p class="col-md-7 col-sm-12"> &COPY; Copyright @ 2024 - Created by <span class="text-primary"> Atif ur Rehman </span>-  All rights reserved</p>
+      <p class="col-md-2 col-sm-12"> <i class="fa fa-github fs-5" aria-hidden="true"></i> Atif-7</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

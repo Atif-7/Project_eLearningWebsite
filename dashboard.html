@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard - AR Codings</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <div class="logo">
+        <a class="navbar-brand fs-2" href="index.html" id="logo">AR Codings <i class="fa fa-code" aria-hidden="true"></i></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link active fs-5" aria-current="page" href="dashboard.html">Admin</a>
+          </li>
+          <li class="nav-item">        
+            <a href="index.html" class="btn btn-danger fs-5">Log out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- main -->
+  <section id="dashboard" class="container">
+    <div class="heading2 text-center heading">
+      <h3 class="fs-1"> <i class="fa fa-user-circle" aria-hidden="true"></i> Dashboard <i class="fa fa-dashboard" aria-hidden="true"></i></h3>
+    </div>
+    <div class="dashboard">
+      <div class="details">
+        <div class="flex">
+          <div class="box">
+            <p><i class="fa fa-code" aria-hidden="true"></i></p>
+            Courses : <span>8</span>
+            <p><a class="btn btn-success fs-3" href="courses.html">Manage</a></p>
+          </div>
+          <div class="box">
+            <p><i class="fa fa-male" aria-hidden="true"></i></p>
+            Teachers : <span>5</span>
+            <p><button class="btn btn-success fs-3">Manage</button></p>
+          </div>
+          <div class="box">
+            <p><i class="fa fa-users" aria-hidden="true"></i></p>
+            Students : <span>23</span>
+            <p><button class="btn btn-success fs-3">Manage</button></p>
+          </div>
+          <div class="box">
+            <p><i class="fa fa-comments" aria-hidden="true"></i></p>
+            Messages : <span>99+</span>
+            <p><button class="btn btn-success fs-3">Manage</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <!-- footer -->
+    <footer class="row text-center mt-4">
+      <p class="col-md-3 col-sm-12"><i class="fa fa-google" aria-hidden="true"></i> Ratif3610@gmail.com</p>
+      <p class="col-md-7 col-sm-12"> &COPY; Copyright @ 2024 - Created by <span class="text-primary"> Atif ur Rehman </span>-  All rights reserved</p>
+      <p class="col-md-2 col-sm-12"> <i class="fa fa-github fs-5" aria-hidden="true"></i> Atif-7</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
